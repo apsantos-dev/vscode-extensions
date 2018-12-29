@@ -115,8 +115,6 @@ See the file and folder [structure](./structure.md "Click and see the project!")
 
 All notable changes to this project will be documented in the file [CHANGELOG.md](./CHANGELOG.md "Click here to open the file.").
 
-> Release: 1.0.0 (December 29, 2018)
-
 ### Contributing
 
 See details on contributing to this project at [CONTRIBUTING.md](./CONTRIBUTING.md "Click here to open the file.").

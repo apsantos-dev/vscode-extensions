@@ -6,15 +6,21 @@ _Names ending with /, for example: src/; represents a folder._
 
 ## Release
 
-> 1.0.0 (December 29, 2018)
-
-_Created main project folder: [vscode-extensions/](vscode-extensions/)_
+Launches will have a separation bar for better viewing.
 
 ### Added
 
-The files and / or folders have been added to the root folder of the project, in this case: [vscode-extensions/](vscode-extensions/).
+> 1.0.1 (December 29, 2018)
 
-- [src/assets/doc/extensions.md](./src/assets/doc/extensions.md "Click here to open the file."): These are extensions used in my day to day as a developer.
+- [CHANGELOG.md](CHANGELOG.md "Click here to open the file."): Description of the commit [system.sh](system.sh "Click here to open the file.") was missing.
+- [system.sh](system.sh "Click here to open the file."): .sh system for project management.
+
+---
+
+> 1.0.0 (December 29, 2018)
+
+- _Created main project folder: [vscode-extensions/](/)_
+- [src/assets/doc/extensions.md](src/assets/doc/extensions.md "Click here to open the file."): These are extensions used in my day to day as a developer.
 - [.editorconfig](.editorconfig "Click here to open the file."): Sets the encoding styles for publishers. About [.editorconfig](https://editorconfig.org/ "Click to go to the project website.").
 - [.gitattributes](.gitattributes "Click here to open the file."): Provides attributes for path names. About [.gitattributes](https://git-scm.com/docs/gitattributes "Click to go to the project website.").
 - [.gitignore](.gitignore "Click here to open the file."): Specifies files that will not be monitored by Git. About [.gitignore](https://git-scm.com/docs/gitignore "Click to go to the project website.").
@@ -26,12 +32,22 @@ The files and / or folders have been added to the root folder of the project, in
 
 ### Changed
 
-_No changes at this time, only the initial files were added to the project._
+> 1.0.1 (December 29, 2018)
+
+- [CHANGELOG.md](CHANGELOG.md "Click here to open the file."): The [vscode-extensions/](/) link has been fixed.
+- [system.sh](system.sh "Click here to open the file."): Name some functions for better code reading.
+
+---
 
 ### Removed
 
-_No files or folders have been removed in this release._
+> 1.0.1 (December 29, 2018)
+
+- [README.md](README.md "Click here to open the file."): Removed project version information
+- [system.sh](system.sh "Click here to open the file."): Removed project version information
 
 ### Updated
 
-_No files or folders have been updated in this release._
+> 1.0.1 (December 29, 2018)
+
+- [system.sh](system.sh "Click here to open the file."): Updated 'getopts' menu with more options

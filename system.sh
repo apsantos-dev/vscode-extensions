@@ -15,7 +15,6 @@ function dataSystem() {
   export _author="Pires <https://github.com/apsantos-dev>"
   export _description="Visual Studio Code Extensions"
   export _license="The MIT License (MIT) <https://opensource.org/licenses/MIT>"
-  export _version="1.0.0"
 
   # global git
   export _userName="Anderson Pires"
@@ -69,6 +68,53 @@ function dataSystem() {
 }
 
 #
+
+function inColors() {
+  #
+  if ( ! inColorsOptions ); then
+    errorFunction "Failed to start in colors options and formatting!"
+  fi
+}
+
+#
+function inColorsOptions() {
+  #
+  validateMessage "Starting colors options and formatting"
+
+  #
+  requestNewTask
+
+  cat << EOF
+
+  $(echo -e "${_lg}Colors options and formatting - ${_ic}${_lb}${_month} ${_day}, ${_year} ${_ed}")
+
+  $(echo -e "${_lg}USAGE:            ${_lg}OUTPUT: ${_ed}")
+    $(echo -e "${_lg}\${_be}            ${_be}blue ${_ed}")
+    $(echo -e "${_lg}\${_gy}            ${_gy}gray ${_ed}")
+    $(echo -e "${_lg}\${_gn}            ${_gn}green ${_ed}")
+    $(echo -e "${_lg}\${_pe}            ${_pe}purple ${_ed}")
+    $(echo -e "${_lg}\${_rd}            ${_rd}red ${_ed}")
+    $(echo -e "${_lg}\${_we}            ${_we}white ${_ed}")
+    $(echo -e "${_lg}\${_yw}            ${_yw}yellow ${_ed}")
+    $(echo -e "${_lg}\${_de}            ${_de}darkBlue ${_ed}")
+    $(echo -e "${_lg}\${_dy}            ${_dy}darkGray ${_ed}")
+    $(echo -e "${_lg}\${_lb}            ${_lb}lightBlue ${_ed}")
+    $(echo -e "${_lg}\${_lg}            ${_lg}lightGray ${_ed}")
+    $(echo -e "${_lg}\${_ln}            ${_ln}lightGreen ${_ed}")
+    $(echo -e "${_lg}\${_lp}            ${_lp}lightPurple ${_ed}")
+    $(echo -e "${_lg}\${_lr}            ${_lr}lightRed ${_ed}")
+    $(echo -e "${_lg}\${_bk}            ${_bk}blink ${_ed}")
+    $(echo -e "${_lg}\${_dm}            ${_dm}dim ${_ed}")
+    $(echo -e "${_lg}\${_ed}            ${_ed}close command ${_ed}")
+    $(echo -e "${_lg}\${_he}            used to hide element ${_ed}")
+    $(echo -e "${_lg}\${_ic}            ${_ic}italic ${_ed}")
+    $(echo -e "${_lg}\${_ld}            ${_ld}loading ${_ed}")
+    $(echo -e "${_lg}\${_ue}            ${_ue}underline ${_ed}")
+
+  $(echo -e "${_lg}*************************************************************** ${_ed}")
+
+EOF
+}
 
 #
 function inGit() {
@@ -219,10 +265,11 @@ function inHelp() {
     $(echo -e "$ ${_be}sh ${_thisFile} [options] ${_ed}")
 
   $(echo -e "${_lg}OPTIONS: ${_ed}")
-    $(echo -e "${_be}-s            ${_lg}Start Git in the project and do initial commit${_ed}")
-    $(echo -e "${_be}-h            ${_lg}Help System${_ed}")
+    $(echo -e "${_be}-c            ${_lg}Displays color options ${_ed}")
+    $(echo -e "${_be}-g            ${_lg}Start Git in the project and do initial commit ${_ed}")
+    $(echo -e "${_be}-h            ${_lg}Help System ${_ed}")
     $(echo -e "${_be}-i            ${_lg}System Information ${_ed}")
-    $(echo -e "${_be}-u            ${_lg}System update${_ed}")
+    $(echo -e "${_be}-u            ${_lg}System update ${_ed}")
 
     $(echo -e "${_ic}* The ${_be}'-u'${_ed}${_ic} option has not yet been implemented! ${_ed}")
 
@@ -244,10 +291,9 @@ function inInfo() {
 
   $(echo -e "${_lg}System Information - ${_ic}${_lb}${_month} ${_day}, ${_year} ${_ed}")
 
-  $(echo -e "${_be}Author: ${_lg}${_author}${_ed}")
-  $(echo -e "${_be}Description: ${_lg}${_description}${_ed}")
-  $(echo -e "${_be}License: ${_lg}${_license}${_ed}")
-  $(echo -e "${_be}Version: ${_lg}${_version}${_ed}")
+  $(echo -e "${_be}Author: ${_lg}${_author} ${_ed}")
+  $(echo -e "${_be}Description: ${_lg}${_description} ${_ed}")
+  $(echo -e "${_be}License: ${_lg}${_license} ${_ed}")
 
   $(echo -e "${_lg}*************************************************************** ${_ed}")
 
@@ -315,31 +361,6 @@ function feedbackTask() {
 }
 
 #
-function getColors() {
-  viewMessage "${_bk}blink ${_ed}"
-  viewMessage "${_be}blue ${_ed}"
-  viewMessage "${_lg}gray ${_ed}"
-  viewMessage "${_gn}green ${_ed}"
-  viewMessage "${_pe}purple ${_ed}"
-  viewMessage "${_rd}red ${_ed}"
-  viewMessage "${_we}white ${_ed}"
-  viewMessage "${_yw}yellow ${_ed}"
-  viewMessage "${_de}darkBlue ${_ed}"
-  viewMessage "${_dy}darkGray ${_ed}"
-  viewMessage "${_lb}lightBlue ${_ed}"
-  viewMessage "${_lg}lightGray ${_ed}"
-  viewMessage "${_ln}lightGreen ${_ed}"
-  viewMessage "${_lp}lightPurple ${_ed}"
-  viewMessage "${_lr}lightRed ${_ed}"
-  viewMessage "${_dm}dim ${_ed}"
-  viewMessage "${_ed}end ${_ed}"
-  viewMessage "${_he}hide ${_ed}"
-  viewMessage "${_ic}italic ${_ed}"
-  viewMessage "${_ld}loading ${_ed}"
-  viewMessage "${_ue}underline ${_ed}"
-}
-
-#
 function requestNewTask() {
   #
   sleep 1.5
@@ -369,11 +390,12 @@ function viewMessage() {
 dataSystem ${@}
 
 # Get options
-while getopts ":hisu" flag; do
+while getopts ":cghiu" flag; do
 	case $flag in
+    c) inColors ;;
+    g) inGit ;;
     h) inHelp ;;
     i) inInfo ;;
-    s) inGit ;;
     u) inUpdate ;;
     *) inInvalidOption ;;
   esac

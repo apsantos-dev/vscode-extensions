@@ -14,41 +14,45 @@ Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter
 
 ### Extension name and command for installation
 
-> Auto Import:
+> Alignment
 >
-> ext install steoates.autoimport
+> ext install annsk.alignment
 
 > Angular 1.x snippets for Visual Studio Code using John Papa AngularJS style guide
 >
 > ext install lperdomo.angular1-code-snippets-johnpapastyle
 
-> HTML Snippets
+> Angular 2, 4 and upcoming latest TypeScript HTML Snippets
 >
-> ext install abusaidm.html-snippets
+> ext install UVBrain.Angular2
 
-> VSCode Icons
->
-> ext install robertohuertasm.vscode-icons
-
-> Angular TypeScript Snippets for VS Code
+> Angular v7 Snippets
 >
 > ext install johnpapa.Angular2
 
-> Markdown Lint
+> AngularJS 1.5+ TypeScript Snippets
 >
-> ext install DavidAnson.vscode-markdownlint
+> ext install jimmychandra.angularjs-1-5--typescript-snippets
 
-> Alignment
+> AngularJs 1.x Code Snippets
 >
-> ext install annsk.alignment
+> ext install alexandersage.angular1-code-snippets
 
-> AutoFileName
+> AngularJs ngDoc Generator
 >
-> ext install JerryHong.autofilename
+> ext install Luis.angularjs-ngdoc-generator
+
+> Auto Import:
+>
+> ext install steoates.autoimport
 
 > Bootstrap 4, Font awesome 4, Font Awesome 5 Free & Pro snippets for Visual studio code
 >
 > ext install thekalinga.bootstrap4-vscode
+
+> Bracket Pair Colorizer
+>
+> ext install CoenraadS.bracket-pair-colorizer
 
 > Duplicate Action
 >
@@ -58,6 +62,34 @@ Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter
 >
 > ext install dbaeumer.vscode-eslint
 
+> file-icons
+>
+> ext install file-icons.file-icons
+
+> Git Blame
+>
+> ext install waderyan.gitblame
+
+> Git Graph
+>
+> ext install mhutchie.git-graph
+
+> Git History
+>
+> ext install donjayamanne.githistory
+
+> Git History Diff
+>
+> ext install huizhou.githd
+
+> GitLens — Git supercharged
+>
+> ext install eamodio.gitlens
+
+> HTML Snippets
+>
+> ext install abusaidm.html-snippets
+
 > jQuery Code Snippets
 >
 > ext install donjayamanne.jquerysnippets
@@ -66,10 +98,34 @@ Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter
 >
 > ext install shd101wyy.markdown-preview-enhanced
 
-> TSLint
+> Markdown Lint
 >
-> ext install eg2.tslint
+> ext install DavidAnson.vscode-markdownlint
+
+> Path Autocomplete
+>
+> ext install ionutvmi.path-autocomplete
+
+> PHP IntelliSense
+>
+> ext install felixfbecker.php-intellisense
+
+> Python
+>
+> https://marketplace.visualstudio.com/items?itemName=ms-python.python
 
 > React-Native/React/Redux snippets for es6/es7
 >
 > ext install EQuimper.react-native-react-redux
+
+> Todo Tree
+>
+> ext install Gruntfuggly.todo-tree
+
+> TSLint
+>
+> ext install ms-vscode.vscode-typescript-tslint-plugin
+
+> vscode-icons
+>
+> ext install vscode-icons

@@ -10,6 +10,13 @@ Launches will have a separation bar for better viewing.
 
 ### Added
 
+> v1.0.3 (March 5, 2019)
+
+- New extensions;
+- Ordering [A_Z]
+
+---
+
 > v1.0.2 (December 31, 2018)
 
 - [CHANGELOG.md][_changelog]:

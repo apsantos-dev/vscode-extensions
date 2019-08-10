@@ -161,7 +161,7 @@ _See license details at:_
 [root-ln]: https://en.wikipedia.org/wiki/Sudo "Press Ctrl and click this link to open the page in a new tab"
 [structure-ln]: structure.md "Click and see the project!"
 [terminal-ln]: https://en.wikipedia.org/wiki/Linux_console "Press Ctrl and click this link to open the page in a new tab"
-[twitter-follow-img]: https://img.shields.io/twitter/follow/apsantosdev.svg?label=Follow&style=social
-[twitter-follow-ln]: https://twitter.com/intent/follow?screen_name=apsantosdev "View my profile on Twitter"
+[twitter-follow-img]: https://img.shields.io/twitter/follow/apsantos_dev.svg?label=Follow&style=social
+[twitter-follow-ln]: https://twitter.com/intent/follow?screen_name=apsantos_dev "View my profile on Twitter"
 [vscode-ln]: https://code.visualstudio.com/ "Press Ctrl and click this link to open the page in a new tab"
 [vscode-in]: https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions "Press Ctrl and click this link to open the page in a new tab"
